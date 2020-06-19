@@ -377,10 +377,10 @@ class Launcher(Ktime):
             duration = 0.5  # second
             duration_2 = 1.1
             freq = 440  # Hz
-            self.control = os.system('play -q -n synth 0.4 sin 440 || echo -e "\a"')
-            self.control = os.system('play -q -n synth 0.4 sin 440 || echo -e "\a"')
-            self.control = os.system('play -q -n synth 1.0 sin 440 || echo -e "\a"')
-
+           # self.control = os.system('play -q -n synth 0.4 sin 440 || echo -e "\a"')
+           # self.control = os.system('play -q -n synth 0.4 sin 440 || echo -e "\a"')
+           # self.control = os.system('play -q -n synth 1.0 sin 440 || echo -e "\a"')
+            self.control = os.system('mplayer ./shakuachi-short.mp3')
             # if ~ sudo apt install sox
             # code is here
 
